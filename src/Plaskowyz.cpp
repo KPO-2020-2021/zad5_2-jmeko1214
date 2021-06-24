@@ -26,59 +26,59 @@ Plaskowyz::Plaskowyz()
  |  Konstruktor parametryczny klasy Plaskowyz.                                |
  |  Argumenty:                                                                |
  |     wektor - zmienna przechowuje dlugosc wektora przesuniecia              |
- |     wysokosc - przechowuje polozenie wierzcholka na osi Oz                 |
+ |     dlugosc - przechowuje polozenie wierzcholka na osi Oz                  |
  |     szerokosc - przechowuje polozenie wierzcholka na osi Oy                |
- |     dlugosc - przechowuje polozenie wierzcholka na osi Ox                  |
+ |     wysokosc - przechowuje polozenie wierzcholka na osi Ox                 |
  |  Zwraca:                                                                   |
  |     Wierzcholki Plaskowyzu przesuniete o zadany wektor                     | 
  */
-Plaskowyz::Plaskowyz(Wektor3D srodek, double wysokosc, double szerokosc, double dlugosc, std::string sNazwaPliku)
+Plaskowyz::Plaskowyz(Wektor3D srodek, double dlugosc, double szerokosc, double wysokosc, std::string sNazwaPliku)
 {
     this->sNazwaPliku = sNazwaPliku;
     this->srodek = srodek;
-    double wym[] = {wysokosc, szerokosc, dlugosc};
+    double wym[] = {dlugosc, szerokosc, wysokosc};
     wymiary = new Wektor3D(wym);
     Wektor3D vector;
 
-    vector[0] = srodek[0] - (wysokosc/2);
+    vector[0] = srodek[0] - (dlugosc/2);
     vector[1] = srodek[1] + (szerokosc/2);
-    vector[2] = srodek[2] + (dlugosc/2);
+    vector[2] = srodek[2] + (wysokosc/2);
     wierzcholki.push_back(vector);
     
-    vector[0] = srodek[0] - (wysokosc/2);
+    vector[0] = srodek[0] - (dlugosc/2);
     vector[1] = srodek[1] + (szerokosc/2);
-    vector[2] = srodek[2] - (dlugosc/2);
+    vector[2] = srodek[2] - (wysokosc/2);
     wierzcholki.push_back(vector);
 
-    vector[0] = srodek[0] + (wysokosc/2);
+    vector[0] = srodek[0] + (dlugosc/2);
     vector[1] = srodek[1] + (szerokosc/2);
-    vector[2] = srodek[2] + (dlugosc/2);
+    vector[2] = srodek[2] + (wysokosc/2);
     wierzcholki.push_back(vector);
 
-    vector[0] = srodek[0] + (wysokosc/2);
+    vector[0] = srodek[0] + (dlugosc/2);
     vector[1] = srodek[1] + (szerokosc/2);
-    vector[2] = srodek[2] - (dlugosc/2);
+    vector[2] = srodek[2] - (wysokosc/2);
     wierzcholki.push_back(vector);
 
-    vector[0] = srodek[0] + (wysokosc/2);
+    vector[0] = srodek[0] + (dlugosc/2);
     vector[1] = srodek[1] - (szerokosc/2);
-    vector[2] = srodek[2] + (dlugosc/2);
+    vector[2] = srodek[2] + (wysokosc/2);
     wierzcholki.push_back(vector);
 
-    vector[0] = srodek[0] + (wysokosc/2);
+    vector[0] = srodek[0] + (dlugosc/2);
     vector[1] = srodek[1] - (szerokosc/2);
-    vector[2] = srodek[2] - (dlugosc/2);
+    vector[2] = srodek[2] - (wysokosc/2);
     wierzcholki.push_back(vector);
 
-    vector[0] = srodek[0] - (wysokosc/2);
+    vector[0] = srodek[0] - (dlugosc/2);
     vector[1] = srodek[1] - (szerokosc/2);
-    vector[2] = srodek[2] + (dlugosc/2);
+    vector[2] = srodek[2] + (wysokosc/2);
     wierzcholki.push_back(vector);
 
-    vector[0] = srodek[0] - (wysokosc/2);
+    vector[0] = srodek[0] - (dlugosc/2);
     vector[1] = srodek[1] - (szerokosc/2);
-    vector[2] = srodek[2] - (dlugosc/2);
-    wierzcholki.push_back(vector);
+    vector[2] = srodek[2] - (wysokosc/2);
+    wierzcholki.push_back(vector);   
     
 }
 

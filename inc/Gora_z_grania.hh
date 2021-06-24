@@ -14,15 +14,15 @@
  *  \brief Definicja klasy Gora_z_grania.
  *
  * Klasa reprezentuje Gora_z_grania, obiekt skladajacy 
- * sie z 8 wierzcholkow. Wymiary Gory_z_grania mozna
- * ustawic za pomoca parametrow: wysokosc, szerokosc, dlugosc 
+ * sie z 6 wierzcholkow. Wymiary Gory_z_grania mozna
+ * ustawic za pomoca parametrow: dlugosc, szerokosc, wysokosc 
  * oraz wierzcholki zapisac do pliku. 
  */
 class Gora_z_grania: public BrylaGeometryczna {
     
   public:
     Gora_z_grania();
-    Gora_z_grania( Wektor3D srodek, double wysokosc, double szerokosc, double dlugosc, std::string sNazwaPliku);                                                                                                                                                                                                                                                                      
+    Gora_z_grania( Wektor3D srodek, double dlugosc, double szerokosc, double wysokosc, std::string sNazwaPliku);                                                                                                                                                                                                                                                                      
 
     bool Zapis_do_pliku();
     ~Gora_z_grania();

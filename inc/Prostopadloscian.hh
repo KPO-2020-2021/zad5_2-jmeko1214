@@ -15,14 +15,14 @@
  *
  * Klasa reprezentuje prostopadloscian, obiekt skladajacy 
  * sie z 8 wierzcholkow. Wymiary prostopadloscianu mozna
- * ustawic za pomoca parametrow: wysokosc, szerokosc, dlugosc 
+ * ustawic za pomoca parametrow: dlugosc, szerokosc, wysokosc
  * oraz wierzcholki zapisac do pliku. 
  */
 class Prostopadloscian: public BrylaGeometryczna {
     
   public:
     Prostopadloscian();
-    Prostopadloscian( Wektor3D srodek, double wysokosc, double szerokosc, double dlugosc, std::string sNazwaPliku);                                                                                                                                                                                                                                                                      
+    Prostopadloscian( Wektor3D srodek, double dlugosc, double szerokosc, double wysokosc, std::string sNazwaPliku);                                                                                                                                                                                                                                                                      
 
     bool Zapis_do_pliku();
     ~Prostopadloscian();

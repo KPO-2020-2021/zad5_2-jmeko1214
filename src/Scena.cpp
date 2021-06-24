@@ -6,10 +6,12 @@
  */
 Scena::Scena()
 {
-    double polozenie[3] = {25.0, 25.0, 10.0};
-    double polozenie2[3] = {100.0, 25.0, 10.0};
+    double polozenie[3] = {25.0, 25.0, 10.0};       //polozenie pierwszego drona
+    double polozenie2[3] = {100.0, 25.0, 10.0};     //polozenie drugiego drona
+    double plaskowyz[3] = {-100.0, -100.0, 10.0};    //polozenie plaskowyzu
     Wektor3D w1(polozenie);
     Wektor3D w2(polozenie2);
+    Wektor3D w3(plaskowyz);
 
     Lacze.DodajNazwePliku("../datasets/bryly_wzorcowe/plaszczyzna.dat",PzG::RR_Ciagly,2);
     Lacze.ZmienTrybRys(PzG::TR_3D);
@@ -19,7 +21,16 @@ Scena::Scena()
     Lacze.UstawZakresZ(-100,400);
     dno = new Plaszczyzna(600, 600, 0, "../datasets/bryly_wzorcowe/plaszczyzna.dat");
     dno->Zapisz_do_pliku();   //plik plaszczyzny
-  
+    
+    przeszkody.push_front(std::make_shared<Plaskowyz>(w3, 100, 150, 120, "../datasets/przeszkody/plaskowyz.dat"));
+    Lacze.DodajNazwePliku("../datasets/przeszkody/plaskowyz.dat", PzG::RR_Ciagly, 2);
+
+    for(std::list<std::shared_ptr<BrylaGeometryczna>>::const_iterator a = przeszkody.begin(); a != przeszkody.end(); a++)
+    {
+        (*a)->Zapisz_do_pliku();
+    }
+
+
     Lacze.DodajNazwePliku(("../datasets/korpus" + std::to_string(1) + ".dat").c_str(), PzG::RR_Ciagly, 2);
     Lacze.DodajNazwePliku(("../datasets/korpus" + std::to_string(2) + ".dat").c_str(), PzG::RR_Ciagly, 2);
 

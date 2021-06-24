@@ -3,10 +3,12 @@
 
 #include "lacze_do_gnuplota.hh"
 #include "Plaszczyzna.hh"
+#include "Plaskowyz.hh"
 #include "Dron.hh"
-#include "Graniastoslup6.hh"
 #include "Prostopadloscian.hh"
 #include <iostream>
+#include <memory>
+#include <list>
 
 
 /*!
@@ -17,11 +19,12 @@
  */
 class Scena {
     private:
-
     PzG::LaczeDoGNUPlota Lacze;
     Plaszczyzna *dno;
-    Dron *drony[2];
-    int numer;
+    Dron *drony[2];     //tablica dronow
+    int numer;          //numer drona
+    int obiekty;        //liczba obiektow
+    std::list<std::shared_ptr<BrylaGeometryczna>> przeszkody;    //lista przeszkod
 
     public:
     Scena();

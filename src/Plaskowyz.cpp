@@ -1,17 +1,17 @@
-#include "Prostopadloscian.hh"
+#include "Plaskowyz.hh"
 
 
 /*
- *  Tutaj sa zdefiniowane metody klasy Prostopadloscian. 
- *  Metody tworza prostopadloscian i zapisuja go do pliku.
+ *  Tutaj sa zdefiniowane metody klasy Plaskowyz. 
+ *  Metody tworza Plaskowyz i zapisuja go do pliku.
  */
 
- /******************************************************************************
- |  Konstruktor bezparametryczny klasy Prostopadloscian.                      |
+ /*****************************************************************************
+ |  Konstruktor bezparametryczny klasy Plaskowyz.                             |
  |  Argumenty:                                                                |
  |     brak                                                                   |
  */
-Prostopadloscian::Prostopadloscian()
+Plaskowyz::Plaskowyz()
 {
     for(int i=0; i<WIERZCHOLKI; i++)
     {
@@ -22,17 +22,17 @@ Prostopadloscian::Prostopadloscian()
     }
 }
 
-/*****************************************************************************
- |  Konstruktor parametryczny klasy Prostopadloscian.                         |
+/******************************************************************************
+ |  Konstruktor parametryczny klasy Plaskowyz.                                |
  |  Argumenty:                                                                |
  |     wektor - zmienna przechowuje dlugosc wektora przesuniecia              |
  |     wysokosc - przechowuje polozenie wierzcholka na osi Oz                 |
  |     szerokosc - przechowuje polozenie wierzcholka na osi Oy                |
  |     dlugosc - przechowuje polozenie wierzcholka na osi Ox                  |
  |  Zwraca:                                                                   |
- |     Wierzcholki prostopadloscianu przesuniete o zadany wektor              | 
+ |     Wierzcholki Plaskowyzu przesuniete o zadany wektor                     | 
  */
-Prostopadloscian::Prostopadloscian(Wektor3D srodek, double wysokosc, double szerokosc, double dlugosc, std::string sNazwaPliku)
+Plaskowyz::Plaskowyz(Wektor3D srodek, double wysokosc, double szerokosc, double dlugosc, std::string sNazwaPliku)
 {
     this->sNazwaPliku = sNazwaPliku;
     this->srodek = srodek;
@@ -83,13 +83,13 @@ Prostopadloscian::Prostopadloscian(Wektor3D srodek, double wysokosc, double szer
 }
 
 /******************************************************************************
- |  Realizuje zapis wspolrzednych Prostopadloscian do pliku                   |                                               
+ |  Realizuje zapis wspolrzednych Plaskowyz do pliku                          |                                               
  |  Argumenty:                                                                |
  |     sNazwaPliku - nazwa pliku, do ktorego sa zapisywane wspolrzedne wierzch|
  |  Zwraca:                                                                   |
  |     True lub False                                                         |
  */
-bool Prostopadloscian::Zapis_do_pliku()
+bool Plaskowyz::Zapis_do_pliku()
 {
     std::ofstream StrmPlikowy;
 
@@ -119,30 +119,30 @@ bool Prostopadloscian::Zapis_do_pliku()
  |  Przeciazenie operatora <<                                                 |                                               
  |  Argumenty:                                                                |
  |     strm - strumien wyjsciowy                                              |
- |     prosty - zmienna pomocnicza do operacji na prostopadloscianie          |
+ |     plaski - zmienna pomocnicza do operacji na plaskowyzu                  |
  |  Zwraca:                                                                   |
  |     Strumien wyjsciowy                                                     |
  */
-std::ostream & operator << (std::ostream &strm, const Prostopadloscian &prosty)
+std::ostream & operator << (std::ostream &strm, const Plaskowyz &plaski)
 {
     for(int i=0; i<WIERZCHOLKI; i++)
     {
-        strm << prosty[i] << std::endl;
+        strm << plaski[i] << std::endl;
         if(i%2==1)
         {
             strm << std::endl;
         }
     }
-    strm << prosty[0] << std::endl;
-    strm << prosty[1] << std::endl;
+    strm << plaski[0] << std::endl;
+    strm << plaski[1] << std::endl;
     
     return strm;
 }
 
 /*!
- * \brief Destruktor wymiarow prostopadloscia
+ * \brief Destruktor wymiarow plaskowyzu
  */
-Prostopadloscian::~Prostopadloscian()
+Plaskowyz::~Plaskowyz()
 {
     delete wymiary;
 }

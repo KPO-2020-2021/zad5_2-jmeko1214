@@ -6,6 +6,7 @@ CMakeFiles/main.dir/app/main.cpp.o: ../inc/Dron.hh
 CMakeFiles/main.dir/app/main.cpp.o: ../inc/Graniastoslup6.hh
 CMakeFiles/main.dir/app/main.cpp.o: ../inc/Macierz.hh
 CMakeFiles/main.dir/app/main.cpp.o: ../inc/Macierz3x3.hh
+CMakeFiles/main.dir/app/main.cpp.o: ../inc/Plaskowyz.hh
 CMakeFiles/main.dir/app/main.cpp.o: ../inc/Plaszczyzna.hh
 CMakeFiles/main.dir/app/main.cpp.o: ../inc/Prostopadloscian.hh
 CMakeFiles/main.dir/app/main.cpp.o: ../inc/Scena.hh

@@ -7,6 +7,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/jan/Pulpit/zad5_2-jmeko1214/src/BrylaGeometryczna.cpp" "/home/jan/Pulpit/zad5_2-jmeko1214/build/CMakeFiles/engine.dir/src/BrylaGeometryczna.cpp.o"
   "/home/jan/Pulpit/zad5_2-jmeko1214/src/Dron.cpp" "/home/jan/Pulpit/zad5_2-jmeko1214/build/CMakeFiles/engine.dir/src/Dron.cpp.o"
   "/home/jan/Pulpit/zad5_2-jmeko1214/src/Macierz3x3.cpp" "/home/jan/Pulpit/zad5_2-jmeko1214/build/CMakeFiles/engine.dir/src/Macierz3x3.cpp.o"
+  "/home/jan/Pulpit/zad5_2-jmeko1214/src/Plaskowyz.cpp" "/home/jan/Pulpit/zad5_2-jmeko1214/build/CMakeFiles/engine.dir/src/Plaskowyz.cpp.o"
   "/home/jan/Pulpit/zad5_2-jmeko1214/src/Plaszczyzna.cpp" "/home/jan/Pulpit/zad5_2-jmeko1214/build/CMakeFiles/engine.dir/src/Plaszczyzna.cpp.o"
   "/home/jan/Pulpit/zad5_2-jmeko1214/src/Prostopadloscian.cpp" "/home/jan/Pulpit/zad5_2-jmeko1214/build/CMakeFiles/engine.dir/src/Prostopadloscian.cpp.o"
   "/home/jan/Pulpit/zad5_2-jmeko1214/src/Scena.cpp" "/home/jan/Pulpit/zad5_2-jmeko1214/build/CMakeFiles/engine.dir/src/Scena.cpp.o"

@@ -14,9 +14,9 @@
  *  \brief Definicja klasy Prostopadloscian.
  *
  * Klasa reprezentuje prostopadloscian, obiekt skladajacy 
- * sie z 8 wierzcholkow. Prostopadloscian mozna przesuwac,
- * obracac, wyswietlac jego wierzcholki oraz sprawdzac, czy
- * po tych operacjach boki sa rowne.
+ * sie z 8 wierzcholkow. Wymiary prostopadloscianu mozna
+ * ustawic za pomoca parametrow: wysokosc, szerokosc, dlugosc 
+ * oraz wierzcholki zapisac do pliku. 
  */
 class Prostopadloscian: public BrylaGeometryczna {
     

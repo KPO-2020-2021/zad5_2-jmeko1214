@@ -658,6 +658,33 @@ src/Macierz3x3.cpp.s:
 	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/src/Macierz3x3.cpp.s
 .PHONY : src/Macierz3x3.cpp.s
 
+src/Plaskowyz.o: src/Plaskowyz.cpp.o
+
+.PHONY : src/Plaskowyz.o
+
+# target to build an object file
+src/Plaskowyz.cpp.o:
+	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/src/Plaskowyz.cpp.o
+.PHONY : src/Plaskowyz.cpp.o
+
+src/Plaskowyz.i: src/Plaskowyz.cpp.i
+
+.PHONY : src/Plaskowyz.i
+
+# target to preprocess a source file
+src/Plaskowyz.cpp.i:
+	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/src/Plaskowyz.cpp.i
+.PHONY : src/Plaskowyz.cpp.i
+
+src/Plaskowyz.s: src/Plaskowyz.cpp.s
+
+.PHONY : src/Plaskowyz.s
+
+# target to generate assembly for a file
+src/Plaskowyz.cpp.s:
+	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/src/Plaskowyz.cpp.s
+.PHONY : src/Plaskowyz.cpp.s
+
 src/Plaszczyzna.o: src/Plaszczyzna.cpp.o
 
 .PHONY : src/Plaszczyzna.o
@@ -874,6 +901,9 @@ help:
 	@echo "... src/Macierz3x3.o"
 	@echo "... src/Macierz3x3.i"
 	@echo "... src/Macierz3x3.s"
+	@echo "... src/Plaskowyz.o"
+	@echo "... src/Plaskowyz.i"
+	@echo "... src/Plaskowyz.s"
 	@echo "... src/Plaszczyzna.o"
 	@echo "... src/Plaszczyzna.i"
 	@echo "... src/Plaszczyzna.s"

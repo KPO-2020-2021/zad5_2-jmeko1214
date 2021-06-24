@@ -1,11 +1,6 @@
 #include "Dron.hh"
 
 /*!
- * \brief Konstruktor bezparametryczny Drona
- */
-//Dron::Dron(){}
-
-/*!
  * \brief Konstruktor parametryczny Drona
  */
 Dron::Dron(int id, PzG::LaczeDoGNUPlota &Lacze, Wektor3D polozenie) : Lacze(Lacze)

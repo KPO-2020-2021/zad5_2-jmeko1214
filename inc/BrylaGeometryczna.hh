@@ -8,6 +8,8 @@
 #include <fstream>
 #include <vector>
 
+#define WIERZCHOLKI 8
+
 /*!
  * \brief Klasa opisuje bryle geometryczna
  *
@@ -32,6 +34,7 @@ class BrylaGeometryczna{
     BrylaGeometryczna operator + (Wektor3D przesun);
     void Obrot(Macierz3x3 macierz);
     void Przesuniecie(Wektor3D przesun);
+    bool Zapisz_do_pliku();
     ~BrylaGeometryczna();
 
 };

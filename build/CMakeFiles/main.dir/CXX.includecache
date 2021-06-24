@@ -60,6 +60,20 @@ iostream
 Macierz.hh
 ../inc/Macierz.hh
 
+../inc/Plaskowyz.hh
+BrylaGeometryczna.hh
+../inc/BrylaGeometryczna.hh
+iostream
+-
+cstdlib
+-
+iomanip
+-
+fstream
+-
+cmath
+-
+
 ../inc/Plaszczyzna.hh
 BrylaGeometryczna.hh
 ../inc/BrylaGeometryczna.hh
@@ -87,13 +101,17 @@ lacze_do_gnuplota.hh
 ../inc/lacze_do_gnuplota.hh
 Plaszczyzna.hh
 ../inc/Plaszczyzna.hh
+Plaskowyz.hh
+../inc/Plaskowyz.hh
 Dron.hh
 ../inc/Dron.hh
-Graniastoslup6.hh
-../inc/Graniastoslup6.hh
 Prostopadloscian.hh
 ../inc/Prostopadloscian.hh
 iostream
+-
+memory
+-
+list
 -
 
 ../inc/Wektor.hh

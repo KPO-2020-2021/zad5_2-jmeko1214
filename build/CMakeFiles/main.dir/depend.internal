@@ -7,6 +7,7 @@ CMakeFiles/main.dir/app/main.cpp.o
  ../inc/Graniastoslup6.hh
  ../inc/Macierz.hh
  ../inc/Macierz3x3.hh
+ ../inc/Plaskowyz.hh
  ../inc/Plaszczyzna.hh
  ../inc/Prostopadloscian.hh
  ../inc/Scena.hh

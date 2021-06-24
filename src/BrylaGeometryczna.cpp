@@ -100,7 +100,46 @@ void BrylaGeometryczna::Przesuniecie(Wektor3D przesun)
     srodek = srodek + przesun;
 }
 
+/******************************************************************************
+ |  Realizuje zapis wierzcholkow bryly do pliku		     |                                               
+ |  Argumenty:                                                                |
+ |     brak						                        |
+ |  Zwraca:                                                                   |
+ |     True lub False                                                         |
+ */
+bool BrylaGeometryczna::Zapisz_do_pliku()
+{
+    std::ofstream StrmPlikowy;
 
+    StrmPlikowy.open(sNazwaPliku);
+    if(!StrmPlikowy.is_open())
+    {
+        std::cerr << ":( Operacja otwarcia do zapisu \"" << sNazwaPliku << "\"" << std::endl
+                  << ":( nie powiodla sie." << std::endl;
+        return false;
+    }
+    for(int i=0; i<WIERZCHOLKI; i++)
+    {
+        StrmPlikowy << wierzcholki[i] << std::endl;
+        if(i%2==1)
+        {
+            StrmPlikowy << std::endl;
+        }
+    }
+    StrmPlikowy << wierzcholki[0] << std::endl;
+    StrmPlikowy << wierzcholki[1] << std::endl;
+    
+    StrmPlikowy.close();
+    return !StrmPlikowy.fail();
+}
+
+/******************************************************************************
+ |  Destruktor bezparametryczny		     |                                               
+ |  Argumenty:                                                                |
+ |     brak						                        |
+ |  Zwraca:                                                                   |
+ |     usuniete wymiary bryly                                                 |
+ */
  BrylaGeometryczna::~BrylaGeometryczna()
  {
     delete wymiary;

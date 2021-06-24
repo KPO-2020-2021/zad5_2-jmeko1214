@@ -3,15 +3,20 @@
 
 /*!
  * \brief Konstruktor klasy Scena
+ *
+ *  Tutaj powstaje nasza scena (Plaszczyzna),
+ *  na ktorej sa rysowane drony oraz przeszkody
  */
 Scena::Scena()
 {
-    double polozenie[3] = {25.0, 25.0, 10.0};       //polozenie pierwszego drona
-    double polozenie2[3] = {100.0, 25.0, 10.0};     //polozenie drugiego drona
-    double plaskowyz[3] = {-100.0, -100.0, 10.0};    //polozenie plaskowyzu
+    double polozenie[3] = {25.0, 25.0, 10.0};       //polozenie srodka pierwszego drona
+    double polozenie2[3] = {100.0, 25.0, 10.0};     //polozenie srodka drugiego drona
+    double plaskowyz[3] = {-100.0, -100.0, 60.0};   //polozenie srodka plaskowyzu
+    double grania[3] = {-200.0, 100.0, 75.0};       //polozenie srodka gory z grania
     Wektor3D w1(polozenie);
     Wektor3D w2(polozenie2);
     Wektor3D w3(plaskowyz);
+    Wektor3D w4(grania);
 
     Lacze.DodajNazwePliku("../datasets/bryly_wzorcowe/plaszczyzna.dat",PzG::RR_Ciagly,2);
     Lacze.ZmienTrybRys(PzG::TR_3D);
@@ -22,14 +27,19 @@ Scena::Scena()
     dno = new Plaszczyzna(600, 600, 0, "../datasets/bryly_wzorcowe/plaszczyzna.dat");
     dno->Zapisz_do_pliku();   //plik plaszczyzny
     
+    
+    //dodanie plaskowyzu
     przeszkody.push_front(std::make_shared<Plaskowyz>(w3, 100, 150, 120, "../datasets/przeszkody/plaskowyz.dat"));
     Lacze.DodajNazwePliku("../datasets/przeszkody/plaskowyz.dat", PzG::RR_Ciagly, 2);
+    //dodanie gory z grania
+    przeszkody.push_front(std::make_shared<Gora_z_grania>(w4, 50, 150, 150, "../datasets/przeszkody/gora_z_grania.dat"));
+    Lacze.DodajNazwePliku("../datasets/przeszkody/gora_z_grania.dat", PzG::RR_Ciagly, 2);
+
 
     for(std::list<std::shared_ptr<BrylaGeometryczna>>::const_iterator a = przeszkody.begin(); a != przeszkody.end(); a++)
     {
         (*a)->Zapisz_do_pliku();
     }
-
 
     Lacze.DodajNazwePliku(("../datasets/korpus" + std::to_string(1) + ".dat").c_str(), PzG::RR_Ciagly, 2);
     Lacze.DodajNazwePliku(("../datasets/korpus" + std::to_string(2) + ".dat").c_str(), PzG::RR_Ciagly, 2);

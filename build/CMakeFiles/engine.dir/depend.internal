@@ -25,6 +25,17 @@ CMakeFiles/engine.dir/src/Dron.cpp.o
  ../src/Macierz.cpp
  ../src/Wektor.cpp
  /home/jan/Pulpit/zad5_2-jmeko1214/src/Dron.cpp
+CMakeFiles/engine.dir/src/Gora_z_grania.cpp.o
+ ../inc/BrylaGeometryczna.hh
+ ../inc/Gora_z_grania.hh
+ ../inc/Macierz.hh
+ ../inc/Macierz3x3.hh
+ ../inc/Wektor.hh
+ ../inc/Wektor3D.hh
+ ../inc/size.hh
+ ../src/Macierz.cpp
+ ../src/Wektor.cpp
+ /home/jan/Pulpit/zad5_2-jmeko1214/src/Gora_z_grania.cpp
 CMakeFiles/engine.dir/src/Macierz3x3.cpp.o
  /home/jan/Pulpit/zad5_2-jmeko1214/src/Macierz3x3.cpp
 CMakeFiles/engine.dir/src/Plaskowyz.cpp.o
@@ -54,6 +65,7 @@ CMakeFiles/engine.dir/src/Prostopadloscian.cpp.o
 CMakeFiles/engine.dir/src/Scena.cpp.o
  ../inc/BrylaGeometryczna.hh
  ../inc/Dron.hh
+ ../inc/Gora_z_grania.hh
  ../inc/Graniastoslup6.hh
  ../inc/Macierz.hh
  ../inc/Macierz3x3.hh

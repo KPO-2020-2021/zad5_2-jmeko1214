@@ -174,9 +174,22 @@ CMakeFiles/engine.dir/src/Plaskowyz.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/engine.dir/src/Plaskowyz.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jan/Pulpit/zad5_2-jmeko1214/src/Plaskowyz.cpp -o CMakeFiles/engine.dir/src/Plaskowyz.cpp.s
 
+CMakeFiles/engine.dir/src/Gora_z_grania.cpp.o: CMakeFiles/engine.dir/flags.make
+CMakeFiles/engine.dir/src/Gora_z_grania.cpp.o: ../src/Gora_z_grania.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jan/Pulpit/zad5_2-jmeko1214/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/engine.dir/src/Gora_z_grania.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/engine.dir/src/Gora_z_grania.cpp.o -c /home/jan/Pulpit/zad5_2-jmeko1214/src/Gora_z_grania.cpp
+
+CMakeFiles/engine.dir/src/Gora_z_grania.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/engine.dir/src/Gora_z_grania.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jan/Pulpit/zad5_2-jmeko1214/src/Gora_z_grania.cpp > CMakeFiles/engine.dir/src/Gora_z_grania.cpp.i
+
+CMakeFiles/engine.dir/src/Gora_z_grania.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/engine.dir/src/Gora_z_grania.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jan/Pulpit/zad5_2-jmeko1214/src/Gora_z_grania.cpp -o CMakeFiles/engine.dir/src/Gora_z_grania.cpp.s
+
 CMakeFiles/engine.dir/src/lacze_do_gnuplota.cpp.o: CMakeFiles/engine.dir/flags.make
 CMakeFiles/engine.dir/src/lacze_do_gnuplota.cpp.o: ../src/lacze_do_gnuplota.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jan/Pulpit/zad5_2-jmeko1214/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/engine.dir/src/lacze_do_gnuplota.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jan/Pulpit/zad5_2-jmeko1214/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/engine.dir/src/lacze_do_gnuplota.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/engine.dir/src/lacze_do_gnuplota.cpp.o -c /home/jan/Pulpit/zad5_2-jmeko1214/src/lacze_do_gnuplota.cpp
 
 CMakeFiles/engine.dir/src/lacze_do_gnuplota.cpp.i: cmake_force
@@ -196,6 +209,7 @@ engine: CMakeFiles/engine.dir/src/Scena.cpp.o
 engine: CMakeFiles/engine.dir/src/Wektor3D.cpp.o
 engine: CMakeFiles/engine.dir/src/Macierz3x3.cpp.o
 engine: CMakeFiles/engine.dir/src/Plaskowyz.cpp.o
+engine: CMakeFiles/engine.dir/src/Gora_z_grania.cpp.o
 engine: CMakeFiles/engine.dir/src/lacze_do_gnuplota.cpp.o
 engine: CMakeFiles/engine.dir/build.make
 

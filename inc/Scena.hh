@@ -4,6 +4,7 @@
 #include "lacze_do_gnuplota.hh"
 #include "Plaszczyzna.hh"
 #include "Plaskowyz.hh"
+#include "Gora_z_grania.hh"
 #include "Dron.hh"
 #include "Prostopadloscian.hh"
 #include <iostream>

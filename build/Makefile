@@ -631,6 +631,33 @@ src/Dron.cpp.s:
 	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/src/Dron.cpp.s
 .PHONY : src/Dron.cpp.s
 
+src/Gora_z_grania.o: src/Gora_z_grania.cpp.o
+
+.PHONY : src/Gora_z_grania.o
+
+# target to build an object file
+src/Gora_z_grania.cpp.o:
+	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/src/Gora_z_grania.cpp.o
+.PHONY : src/Gora_z_grania.cpp.o
+
+src/Gora_z_grania.i: src/Gora_z_grania.cpp.i
+
+.PHONY : src/Gora_z_grania.i
+
+# target to preprocess a source file
+src/Gora_z_grania.cpp.i:
+	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/src/Gora_z_grania.cpp.i
+.PHONY : src/Gora_z_grania.cpp.i
+
+src/Gora_z_grania.s: src/Gora_z_grania.cpp.s
+
+.PHONY : src/Gora_z_grania.s
+
+# target to generate assembly for a file
+src/Gora_z_grania.cpp.s:
+	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/src/Gora_z_grania.cpp.s
+.PHONY : src/Gora_z_grania.cpp.s
+
 src/Macierz3x3.o: src/Macierz3x3.cpp.o
 
 .PHONY : src/Macierz3x3.o
@@ -898,6 +925,9 @@ help:
 	@echo "... src/Dron.o"
 	@echo "... src/Dron.i"
 	@echo "... src/Dron.s"
+	@echo "... src/Gora_z_grania.o"
+	@echo "... src/Gora_z_grania.i"
+	@echo "... src/Gora_z_grania.s"
 	@echo "... src/Macierz3x3.o"
 	@echo "... src/Macierz3x3.i"
 	@echo "... src/Macierz3x3.s"

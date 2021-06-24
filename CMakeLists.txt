@@ -48,6 +48,7 @@ set(SOURCES          # All .cpp files in src/
     src/Wektor3D.cpp
     src/Macierz3x3.cpp
     src/Plaskowyz.cpp
+    src/Gora_z_grania.cpp
     src/lacze_do_gnuplota.cpp
 )
 set(TESTFILES        # All .cpp files in tests/

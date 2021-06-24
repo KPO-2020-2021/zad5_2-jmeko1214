@@ -25,6 +25,17 @@ CMakeFiles/engine.dir/src/Dron.cpp.o: ../src/Macierz.cpp
 CMakeFiles/engine.dir/src/Dron.cpp.o: ../src/Wektor.cpp
 CMakeFiles/engine.dir/src/Dron.cpp.o: ../src/Dron.cpp
 
+CMakeFiles/engine.dir/src/Gora_z_grania.cpp.o: ../inc/BrylaGeometryczna.hh
+CMakeFiles/engine.dir/src/Gora_z_grania.cpp.o: ../inc/Gora_z_grania.hh
+CMakeFiles/engine.dir/src/Gora_z_grania.cpp.o: ../inc/Macierz.hh
+CMakeFiles/engine.dir/src/Gora_z_grania.cpp.o: ../inc/Macierz3x3.hh
+CMakeFiles/engine.dir/src/Gora_z_grania.cpp.o: ../inc/Wektor.hh
+CMakeFiles/engine.dir/src/Gora_z_grania.cpp.o: ../inc/Wektor3D.hh
+CMakeFiles/engine.dir/src/Gora_z_grania.cpp.o: ../inc/size.hh
+CMakeFiles/engine.dir/src/Gora_z_grania.cpp.o: ../src/Macierz.cpp
+CMakeFiles/engine.dir/src/Gora_z_grania.cpp.o: ../src/Wektor.cpp
+CMakeFiles/engine.dir/src/Gora_z_grania.cpp.o: ../src/Gora_z_grania.cpp
+
 CMakeFiles/engine.dir/src/Macierz3x3.cpp.o: ../src/Macierz3x3.cpp
 
 CMakeFiles/engine.dir/src/Plaskowyz.cpp.o: ../inc/BrylaGeometryczna.hh
@@ -53,6 +64,7 @@ CMakeFiles/engine.dir/src/Prostopadloscian.cpp.o: ../src/Prostopadloscian.cpp
 
 CMakeFiles/engine.dir/src/Scena.cpp.o: ../inc/BrylaGeometryczna.hh
 CMakeFiles/engine.dir/src/Scena.cpp.o: ../inc/Dron.hh
+CMakeFiles/engine.dir/src/Scena.cpp.o: ../inc/Gora_z_grania.hh
 CMakeFiles/engine.dir/src/Scena.cpp.o: ../inc/Graniastoslup6.hh
 CMakeFiles/engine.dir/src/Scena.cpp.o: ../inc/Macierz.hh
 CMakeFiles/engine.dir/src/Scena.cpp.o: ../inc/Macierz3x3.hh

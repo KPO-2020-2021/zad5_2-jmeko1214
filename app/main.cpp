@@ -36,12 +36,12 @@ void Menu_wyswietl()
 {
   cout<<endl;
   cout<<" Menu programu:"<<endl<<endl;
-  cout<<" a - wybierz aktywnego drona"<<endl;
-  cout<<" p - zadaj parametry przelotu"<<endl;
-  cout<<" d - dodaj element powierzchni"<<endl;
-  cout<<" u - usun element powierzchni"<<endl;
-  cout<<" m - wyswietl menu"<<endl<<endl;
-  cout<<" k - koniec dzialania programu"<<endl;
+  cout<<"  a - wybierz aktywnego drona"<<endl;
+  cout<<"  p - zadaj parametry przelotu"<<endl;
+  cout<<"  d - dodaj element powierzchni"<<endl;
+  cout<<"  u - usun element powierzchni"<<endl;
+  cout<<"  m - wyswietl menu"<<endl<<endl;
+  cout<<"  k - koniec dzialania programu"<<endl;
   cout<<endl;
 }
 
@@ -53,7 +53,7 @@ void Menu_wyswietl()
  * funkcji programu. Zawiera proste menu obslugujace ruch drona.
  */
 int main() {
-  cout << "Project Dron based on C++ Boiler Plate v"
+  cout << " Project Dron based on C++ Boiler Plate v"
             << PROJECT_VERSION_MAJOR
             << "."
             << PROJECT_VERSION_MINOR
@@ -70,8 +70,8 @@ int main() {
   Scena scena;
   char opcja=0;         //zmienna dla obslugi prostego menu
 
-  cout<<" Program rysuje w gnuplocie Drona z czterema rotorami,"<<endl;
-  cout<<" obraca go o zadany kat i przesuwa o zadany droge."<<endl;
+  cout<<" Program rysuje w gnuplocie Drona oraz przeszkody,"<<endl;
+  cout<<" obraca drona o zadany kat i przesuwa o zadana droge."<<endl;
   cout<<" Wynik jest wyswietlany w gnuplocie oraz zapisywany do pliku."<<endl<<endl;
   
   wektor.Ilosc_wektorow();
@@ -99,7 +99,7 @@ int main() {
       }
       case 'd':
       {
-        //scena.Dodaj_przeszkode();
+        scena.Dodaj_przeszkode();
         break;
       }
       case 'u':

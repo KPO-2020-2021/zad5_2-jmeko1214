@@ -25,7 +25,6 @@ class Scena {
     Plaszczyzna *dno;
     Dron *drony[2];     //tablica dronow
     int numer;          //numer drona
-    int obiekty;        //liczba obiektow
     std::list<std::shared_ptr<BrylaGeometryczna>> przeszkody;    //lista przeszkod
 
     public:
@@ -33,6 +32,8 @@ class Scena {
     void Rysuj();
     bool Wybor_drona();
     void Ruch_dronem();
+    void Dodaj_przeszkode();
+    //void Usun_przeszkode();
     ~Scena();
 };
 

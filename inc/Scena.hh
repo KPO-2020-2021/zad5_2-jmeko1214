@@ -5,6 +5,7 @@
 #include "Plaszczyzna.hh"
 #include "Plaskowyz.hh"
 #include "Gora_z_grania.hh"
+#include "Gora_ostra.hh"
 #include "Dron.hh"
 #include "Prostopadloscian.hh"
 #include <iostream>

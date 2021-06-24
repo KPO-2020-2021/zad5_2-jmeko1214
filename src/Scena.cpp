@@ -13,10 +13,12 @@ Scena::Scena()
     double polozenie2[3] = {100.0, 25.0, 10.0};     //polozenie srodka drugiego drona
     double plaskowyz[3] = {-100.0, -100.0, 60.0};   //polozenie srodka plaskowyzu
     double grania[3] = {-200.0, 100.0, 75.0};       //polozenie srodka gory z grania
+    double szczyt[3] = { 150.0, -100.0, 90.0};      //polozenie srodka gory z ostrym szczytem
     Wektor3D w1(polozenie);
     Wektor3D w2(polozenie2);
     Wektor3D w3(plaskowyz);
     Wektor3D w4(grania);
+    Wektor3D w5(szczyt);
 
     Lacze.DodajNazwePliku("../datasets/bryly_wzorcowe/plaszczyzna.dat",PzG::RR_Ciagly,2);
     Lacze.ZmienTrybRys(PzG::TR_3D);
@@ -34,7 +36,9 @@ Scena::Scena()
     //dodanie gory z grania
     przeszkody.push_front(std::make_shared<Gora_z_grania>(w4, 50, 150, 150, "../datasets/przeszkody/gora_z_grania.dat"));
     Lacze.DodajNazwePliku("../datasets/przeszkody/gora_z_grania.dat", PzG::RR_Ciagly, 2);
-
+    //dodanie gory z ostrym szczytem
+    przeszkody.push_front(std::make_shared<Gora_ostra>(w5, 50, 70, 180, "../datasets/przeszkody/gora_ostra.dat"));
+    Lacze.DodajNazwePliku("../datasets/przeszkody/gora_ostra.dat", PzG::RR_Ciagly, 2);
 
     for(std::list<std::shared_ptr<BrylaGeometryczna>>::const_iterator a = przeszkody.begin(); a != przeszkody.end(); a++)
     {

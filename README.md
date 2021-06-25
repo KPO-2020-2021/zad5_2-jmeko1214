@@ -44,9 +44,8 @@ set(SOURCES          # All .cpp files in src/
     src/lacze_do_gnuplota.cpp
 )
 set(TESTFILES        # All .cpp files in tests/
-    Vector2D.cpp
-    Matrix2x2.cpp
-    Rectangle.cpp # etc.
+    Wektor.cpp
+    Macierz.cpp
 )
 set(LIBRARY_NAME zadX)  # Default name for the library built from src/*.cpp (change if you wish)
 ```

@@ -100,6 +100,7 @@ unit_tests_EXTERNAL_OBJECTS = \
 "/home/jan/Pulpit/zad5_2-jmeko1214/build/CMakeFiles/engine.dir/src/Macierz3x3.cpp.o" \
 "/home/jan/Pulpit/zad5_2-jmeko1214/build/CMakeFiles/engine.dir/src/Plaskowyz.cpp.o" \
 "/home/jan/Pulpit/zad5_2-jmeko1214/build/CMakeFiles/engine.dir/src/Gora_z_grania.cpp.o" \
+"/home/jan/Pulpit/zad5_2-jmeko1214/build/CMakeFiles/engine.dir/src/Gora_ostra.cpp.o" \
 "/home/jan/Pulpit/zad5_2-jmeko1214/build/CMakeFiles/engine.dir/src/lacze_do_gnuplota.cpp.o"
 
 unit_tests: tests/CMakeFiles/unit_tests.dir/main.cpp.o
@@ -114,6 +115,7 @@ unit_tests: CMakeFiles/engine.dir/src/Wektor3D.cpp.o
 unit_tests: CMakeFiles/engine.dir/src/Macierz3x3.cpp.o
 unit_tests: CMakeFiles/engine.dir/src/Plaskowyz.cpp.o
 unit_tests: CMakeFiles/engine.dir/src/Gora_z_grania.cpp.o
+unit_tests: CMakeFiles/engine.dir/src/Gora_ostra.cpp.o
 unit_tests: CMakeFiles/engine.dir/src/lacze_do_gnuplota.cpp.o
 unit_tests: tests/CMakeFiles/unit_tests.dir/build.make
 unit_tests: tests/CMakeFiles/unit_tests.dir/link.txt

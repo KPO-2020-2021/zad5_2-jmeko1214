@@ -25,6 +25,17 @@ CMakeFiles/engine.dir/src/Dron.cpp.o
  ../src/Macierz.cpp
  ../src/Wektor.cpp
  /home/jan/Pulpit/zad5_2-jmeko1214/src/Dron.cpp
+CMakeFiles/engine.dir/src/Gora_ostra.cpp.o
+ ../inc/BrylaGeometryczna.hh
+ ../inc/Gora_ostra.hh
+ ../inc/Macierz.hh
+ ../inc/Macierz3x3.hh
+ ../inc/Wektor.hh
+ ../inc/Wektor3D.hh
+ ../inc/size.hh
+ ../src/Macierz.cpp
+ ../src/Wektor.cpp
+ /home/jan/Pulpit/zad5_2-jmeko1214/src/Gora_ostra.cpp
 CMakeFiles/engine.dir/src/Gora_z_grania.cpp.o
  ../inc/BrylaGeometryczna.hh
  ../inc/Gora_z_grania.hh
@@ -37,6 +48,12 @@ CMakeFiles/engine.dir/src/Gora_z_grania.cpp.o
  ../src/Wektor.cpp
  /home/jan/Pulpit/zad5_2-jmeko1214/src/Gora_z_grania.cpp
 CMakeFiles/engine.dir/src/Macierz3x3.cpp.o
+ ../inc/Macierz.hh
+ ../inc/Macierz3x3.hh
+ ../inc/Wektor.hh
+ ../inc/size.hh
+ ../src/Macierz.cpp
+ ../src/Wektor.cpp
  /home/jan/Pulpit/zad5_2-jmeko1214/src/Macierz3x3.cpp
 CMakeFiles/engine.dir/src/Plaskowyz.cpp.o
  ../inc/BrylaGeometryczna.hh
@@ -50,6 +67,15 @@ CMakeFiles/engine.dir/src/Plaskowyz.cpp.o
  ../src/Wektor.cpp
  /home/jan/Pulpit/zad5_2-jmeko1214/src/Plaskowyz.cpp
 CMakeFiles/engine.dir/src/Plaszczyzna.cpp.o
+ ../inc/BrylaGeometryczna.hh
+ ../inc/Macierz.hh
+ ../inc/Macierz3x3.hh
+ ../inc/Plaszczyzna.hh
+ ../inc/Wektor.hh
+ ../inc/Wektor3D.hh
+ ../inc/size.hh
+ ../src/Macierz.cpp
+ ../src/Wektor.cpp
  /home/jan/Pulpit/zad5_2-jmeko1214/src/Plaszczyzna.cpp
 CMakeFiles/engine.dir/src/Prostopadloscian.cpp.o
  ../inc/BrylaGeometryczna.hh
@@ -65,6 +91,7 @@ CMakeFiles/engine.dir/src/Prostopadloscian.cpp.o
 CMakeFiles/engine.dir/src/Scena.cpp.o
  ../inc/BrylaGeometryczna.hh
  ../inc/Dron.hh
+ ../inc/Gora_ostra.hh
  ../inc/Gora_z_grania.hh
  ../inc/Graniastoslup6.hh
  ../inc/Macierz.hh
@@ -81,10 +108,15 @@ CMakeFiles/engine.dir/src/Scena.cpp.o
  ../src/Wektor.cpp
  /home/jan/Pulpit/zad5_2-jmeko1214/src/Scena.cpp
 CMakeFiles/engine.dir/src/Wektor3D.cpp.o
+ ../inc/Wektor.hh
+ ../inc/Wektor3D.hh
+ ../inc/size.hh
+ ../src/Wektor.cpp
  /home/jan/Pulpit/zad5_2-jmeko1214/src/Wektor3D.cpp
 CMakeFiles/engine.dir/src/example.cpp.o
  ../inc/example.h
  /home/jan/Pulpit/zad5_2-jmeko1214/src/example.cpp
  /home/jan/Pulpit/zad5_2-jmeko1214/tests/doctest/doctest.h
 CMakeFiles/engine.dir/src/lacze_do_gnuplota.cpp.o
+ ../inc/lacze_do_gnuplota.hh
  /home/jan/Pulpit/zad5_2-jmeko1214/src/lacze_do_gnuplota.cpp

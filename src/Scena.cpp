@@ -22,22 +22,6 @@ Scena::Scena()
     Lacze.UstawZakresZ(-100,400);
     dno = new Plaszczyzna(600, 600, 0, "../datasets/bryly_wzorcowe/plaszczyzna.dat");
     dno->Zapisz_do_pliku();   //plik plaszczyzny
-    
-    //dodanie plaskowyzu
-    //przeszkody.push_front(std::make_shared<Plaskowyz>(w3, 100, 150, 120, "../datasets/przeszkody/plaskowyz.dat"));
-    //Lacze.DodajNazwePliku("../datasets/przeszkody/plaskowyz.dat", PzG::RR_Ciagly, 2);
-    //dodanie gory z grania
-    //przeszkody.push_front(std::make_shared<Gora_z_grania>(w4, 50, 150, 150, "../datasets/przeszkody/gora_z_grania.dat"));
-    //Lacze.DodajNazwePliku("../datasets/przeszkody/gora_z_grania.dat", PzG::RR_Ciagly, 2);
-    //dodanie gory z ostrym szczytem
-    //przeszkody.push_front(std::make_shared<Gora_ostra>(w5, 50, 70, 180, "../datasets/przeszkody/gora_ostra.dat"));
-    //Lacze.DodajNazwePliku("../datasets/przeszkody/gora_ostra.dat", PzG::RR_Ciagly, 2);
-
-    /*for(std::list<std::shared_ptr<BrylaGeometryczna>>::const_iterator a = przeszkody.begin(); a != przeszkody.end(); a++)
-    {
-        (*a)->Zapisz_do_pliku();
-    }*/
-
     Lacze.DodajNazwePliku(("../datasets/korpus" + std::to_string(1) + ".dat").c_str(), PzG::RR_Ciagly, 2);
     Lacze.DodajNazwePliku(("../datasets/korpus" + std::to_string(2) + ".dat").c_str(), PzG::RR_Ciagly, 2);
 
@@ -112,41 +96,49 @@ void Scena::Ruch_dronem()
 void Scena::Dodaj_przeszkode()
 {
     int wybor;
+    double OX, OY, OZ;      
+    double x, y, z;
+    
+
     std::cout << "   Wybierz rodzaj powierzchniowego elementu" << std::endl << std::endl;
     std::cout << "    1 - Gora z ostrym szczytem" << std::endl;
     std::cout << "    2 - Gora z grania" << std::endl;
     std::cout << "    3 - Plaskowyz" << std::endl << std::endl;
     std::cout << "  Wprowadz numer typu elementu> ";
     std::cin >> wybor;
+    std::cout << std::endl << std::endl;
+    std::cout << "  Podaj skale wzdluz kolejnych osi OX, OY, OZ." << std::endl;
+    std::cout << "  Wprowadz skale: OX OY OZ> ";
+    std::cin >> OX >> OY >> OZ;
     std::cout << std::endl;
+    std::cout << "  Podaj wspolrzedne srodka podstawy x,y." <<std::endl;
+    std::cout << "  Wprowadz wspolrzedne: x y> ";
+    std::cin >> x >> y;
 
-    double plaskowyz[3] = {-100.0, -100.0, 60.0};   //polozenie srodka plaskowyzu
-    double grania[3] = {-200.0, 100.0, 75.0};       //polozenie srodka gory z grania
-    double szczyt[3] = { 150.0, -100.0, 90.0};      //polozenie srodka gory z ostrym szczytem
-    Wektor3D w3(plaskowyz);
-    Wektor3D w4(grania);
-    Wektor3D w5(szczyt);
+    z = OZ / 2;     //liczenie wspolrzednej wysokosci srodka bryly
+    double srodek[3] = {x, y, z };   //polozenie srodka bryly
+    Wektor3D w3(srodek);
 
     switch(wybor)
     {
         case 1:
         {
             //dodanie gory z ostrym szczytem
-            przeszkody.push_front(std::make_shared<Gora_ostra>(w5, 50, 70, 180, "../datasets/przeszkody/gora_ostra.dat"));
+            przeszkody.push_front(std::make_shared<Gora_ostra>(w3, OX, OY, OZ, "../datasets/przeszkody/gora_ostra.dat"));
             Lacze.DodajNazwePliku("../datasets/przeszkody/gora_ostra.dat", PzG::RR_Ciagly, 2);
             break;
         }
         case 2:
         {
             //dodanie gory z grania
-            przeszkody.push_front(std::make_shared<Gora_z_grania>(w4, 50, 150, 150, "../datasets/przeszkody/gora_z_grania.dat"));
+            przeszkody.push_front(std::make_shared<Gora_z_grania>(w3, OX, OY, OZ, "../datasets/przeszkody/gora_z_grania.dat"));
             Lacze.DodajNazwePliku("../datasets/przeszkody/gora_z_grania.dat", PzG::RR_Ciagly, 2);
             break;
         }
         case 3:
         {
             //dodanie plaskowyzu
-            przeszkody.push_front(std::make_shared<Plaskowyz>(w3, 100, 150, 120, "../datasets/przeszkody/plaskowyz.dat"));
+            przeszkody.push_front(std::make_shared<Plaskowyz>(w3, OX, OY, OZ, "../datasets/przeszkody/plaskowyz.dat"));
             Lacze.DodajNazwePliku("../datasets/przeszkody/plaskowyz.dat", PzG::RR_Ciagly, 2);
             break;
         } 
@@ -162,6 +154,7 @@ void Scena::Dodaj_przeszkode()
         (*a)->Zapisz_do_pliku();
     }
     Lacze.Rysuj();
+    std::cout << std::endl;
     std::cout << "  Element dodany do sceny. " << std::endl;
 }
 

@@ -3,6 +3,7 @@
 
 CMakeFiles/main.dir/app/main.cpp.o: ../inc/BrylaGeometryczna.hh
 CMakeFiles/main.dir/app/main.cpp.o: ../inc/Dron.hh
+CMakeFiles/main.dir/app/main.cpp.o: ../inc/Gora_ostra.hh
 CMakeFiles/main.dir/app/main.cpp.o: ../inc/Gora_z_grania.hh
 CMakeFiles/main.dir/app/main.cpp.o: ../inc/Graniastoslup6.hh
 CMakeFiles/main.dir/app/main.cpp.o: ../inc/Macierz.hh

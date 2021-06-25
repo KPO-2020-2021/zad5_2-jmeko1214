@@ -86,6 +86,7 @@ main_EXTERNAL_OBJECTS = \
 "/home/jan/Pulpit/zad5_2-jmeko1214/build/CMakeFiles/engine.dir/src/Macierz3x3.cpp.o" \
 "/home/jan/Pulpit/zad5_2-jmeko1214/build/CMakeFiles/engine.dir/src/Plaskowyz.cpp.o" \
 "/home/jan/Pulpit/zad5_2-jmeko1214/build/CMakeFiles/engine.dir/src/Gora_z_grania.cpp.o" \
+"/home/jan/Pulpit/zad5_2-jmeko1214/build/CMakeFiles/engine.dir/src/Gora_ostra.cpp.o" \
 "/home/jan/Pulpit/zad5_2-jmeko1214/build/CMakeFiles/engine.dir/src/lacze_do_gnuplota.cpp.o"
 
 main: CMakeFiles/main.dir/app/main.cpp.o
@@ -99,6 +100,7 @@ main: CMakeFiles/engine.dir/src/Wektor3D.cpp.o
 main: CMakeFiles/engine.dir/src/Macierz3x3.cpp.o
 main: CMakeFiles/engine.dir/src/Plaskowyz.cpp.o
 main: CMakeFiles/engine.dir/src/Gora_z_grania.cpp.o
+main: CMakeFiles/engine.dir/src/Gora_ostra.cpp.o
 main: CMakeFiles/engine.dir/src/lacze_do_gnuplota.cpp.o
 main: CMakeFiles/main.dir/build.make
 main: CMakeFiles/main.dir/link.txt

@@ -34,6 +34,20 @@ string.h
 unistd.h
 -
 
+../inc/Gora_ostra.hh
+BrylaGeometryczna.hh
+../inc/BrylaGeometryczna.hh
+iostream
+-
+cstdlib
+-
+iomanip
+-
+fstream
+-
+cmath
+-
+
 ../inc/Gora_z_grania.hh
 BrylaGeometryczna.hh
 ../inc/BrylaGeometryczna.hh
@@ -119,6 +133,8 @@ Plaskowyz.hh
 ../inc/Plaskowyz.hh
 Gora_z_grania.hh
 ../inc/Gora_z_grania.hh
+Gora_ostra.hh
+../inc/Gora_ostra.hh
 Dron.hh
 ../inc/Dron.hh
 Prostopadloscian.hh

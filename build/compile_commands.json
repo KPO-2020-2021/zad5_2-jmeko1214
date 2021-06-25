@@ -51,6 +51,11 @@
 },
 {
   "directory": "/home/jan/Pulpit/zad5_2-jmeko1214/build",
+  "command": "/usr/bin/c++  -DENABLE_DOCTEST_IN_LIBRARY -I/home/jan/Pulpit/zad5_2-jmeko1214/build -I/home/jan/Pulpit/zad5_2-jmeko1214/inc -I/home/jan/Pulpit/zad5_2-jmeko1214/src -I/home/jan/Pulpit/zad5_2-jmeko1214/external/doctest/doctest  -g   -Wall -Wextra -Wpedantic -Wno-switch-enum -Werror -std=c++17 -o CMakeFiles/engine.dir/src/Gora_ostra.cpp.o -c /home/jan/Pulpit/zad5_2-jmeko1214/src/Gora_ostra.cpp",
+  "file": "/home/jan/Pulpit/zad5_2-jmeko1214/src/Gora_ostra.cpp"
+},
+{
+  "directory": "/home/jan/Pulpit/zad5_2-jmeko1214/build",
   "command": "/usr/bin/c++  -DENABLE_DOCTEST_IN_LIBRARY -I/home/jan/Pulpit/zad5_2-jmeko1214/build -I/home/jan/Pulpit/zad5_2-jmeko1214/inc -I/home/jan/Pulpit/zad5_2-jmeko1214/src -I/home/jan/Pulpit/zad5_2-jmeko1214/external/doctest/doctest  -g   -Wall -Wextra -Wpedantic -Wno-switch-enum -Werror -std=c++17 -o CMakeFiles/engine.dir/src/lacze_do_gnuplota.cpp.o -c /home/jan/Pulpit/zad5_2-jmeko1214/src/lacze_do_gnuplota.cpp",
   "file": "/home/jan/Pulpit/zad5_2-jmeko1214/src/lacze_do_gnuplota.cpp"
 },

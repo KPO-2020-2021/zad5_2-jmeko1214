@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/engine.dir/src/BrylaGeometryczna.cpp.o"
   "CMakeFiles/engine.dir/src/Dron.cpp.o"
+  "CMakeFiles/engine.dir/src/Gora_ostra.cpp.o"
   "CMakeFiles/engine.dir/src/Gora_z_grania.cpp.o"
   "CMakeFiles/engine.dir/src/Macierz3x3.cpp.o"
   "CMakeFiles/engine.dir/src/Plaskowyz.cpp.o"

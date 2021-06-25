@@ -631,6 +631,33 @@ src/Dron.cpp.s:
 	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/src/Dron.cpp.s
 .PHONY : src/Dron.cpp.s
 
+src/Gora_ostra.o: src/Gora_ostra.cpp.o
+
+.PHONY : src/Gora_ostra.o
+
+# target to build an object file
+src/Gora_ostra.cpp.o:
+	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/src/Gora_ostra.cpp.o
+.PHONY : src/Gora_ostra.cpp.o
+
+src/Gora_ostra.i: src/Gora_ostra.cpp.i
+
+.PHONY : src/Gora_ostra.i
+
+# target to preprocess a source file
+src/Gora_ostra.cpp.i:
+	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/src/Gora_ostra.cpp.i
+.PHONY : src/Gora_ostra.cpp.i
+
+src/Gora_ostra.s: src/Gora_ostra.cpp.s
+
+.PHONY : src/Gora_ostra.s
+
+# target to generate assembly for a file
+src/Gora_ostra.cpp.s:
+	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/src/Gora_ostra.cpp.s
+.PHONY : src/Gora_ostra.cpp.s
+
 src/Gora_z_grania.o: src/Gora_z_grania.cpp.o
 
 .PHONY : src/Gora_z_grania.o
@@ -925,6 +952,9 @@ help:
 	@echo "... src/Dron.o"
 	@echo "... src/Dron.i"
 	@echo "... src/Dron.s"
+	@echo "... src/Gora_ostra.o"
+	@echo "... src/Gora_ostra.i"
+	@echo "... src/Gora_ostra.s"
 	@echo "... src/Gora_z_grania.o"
 	@echo "... src/Gora_z_grania.i"
 	@echo "... src/Gora_z_grania.s"

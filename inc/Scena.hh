@@ -28,12 +28,34 @@ class Scena {
     std::list<std::shared_ptr<BrylaGeometryczna>> przeszkody;    //lista przeszkod
 
     public:
+/*!
+ * \brief Konstruktor klasy Scena
+ */
     Scena();
+
+/*!
+ * \brief Metoda odpowiada za rysowanie
+ */   
     void Rysuj();
+
+/*!
+ * \brief Metoda odpowiada za wybor Drona
+ */
     bool Wybor_drona();
+
+/*!
+ * \brief Metoda odpowiada za ustawienie drona aktywnego
+ */
     void Ruch_dronem();
+
+/*!
+ * \brief Metoda odpowiada za dodawanie przeszkod do sceny
+ */
     void Dodaj_przeszkode();
-    //void Usun_przeszkode();
+
+/*!
+ * \brief Destruktor, usuwa dno oraz drony
+ */
     ~Scena();
 };
 

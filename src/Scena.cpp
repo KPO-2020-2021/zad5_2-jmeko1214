@@ -92,13 +92,15 @@ void Scena::Ruch_dronem()
 
 /*!
  * \brief Metoda odpowiada za dodawanie przeszkod do sceny
+ *  
+ * Metoda pozwala na dodanie przeszkody, wybranie jej wymiarow
+ * oraz na ustawienie polozenie srodka przeszkody na scenie 
  */
 void Scena::Dodaj_przeszkode()
 {
     int wybor;
     double OX, OY, OZ;      
     double x, y, z;
-    
 
     std::cout << "   Wybierz rodzaj powierzchniowego elementu" << std::endl << std::endl;
     std::cout << "    1 - Gora z ostrym szczytem" << std::endl;
@@ -121,23 +123,20 @@ void Scena::Dodaj_przeszkode()
 
     switch(wybor)
     {
-        case 1:
+        case 1:     //dodanie gory z ostrym szczytem
         {
-            //dodanie gory z ostrym szczytem
             przeszkody.push_front(std::make_shared<Gora_ostra>(w3, OX, OY, OZ, "../datasets/przeszkody/gora_ostra.dat"));
             Lacze.DodajNazwePliku("../datasets/przeszkody/gora_ostra.dat", PzG::RR_Ciagly, 2);
             break;
         }
-        case 2:
-        {
-            //dodanie gory z grania
+        case 2:     //dodanie gory z grania
+        {            
             przeszkody.push_front(std::make_shared<Gora_z_grania>(w3, OX, OY, OZ, "../datasets/przeszkody/gora_z_grania.dat"));
             Lacze.DodajNazwePliku("../datasets/przeszkody/gora_z_grania.dat", PzG::RR_Ciagly, 2);
             break;
         }
-        case 3:
-        {
-            //dodanie plaskowyzu
+        case 3:     //dodanie plaskowyzu
+        {            
             przeszkody.push_front(std::make_shared<Plaskowyz>(w3, OX, OY, OZ, "../datasets/przeszkody/plaskowyz.dat"));
             Lacze.DodajNazwePliku("../datasets/przeszkody/plaskowyz.dat", PzG::RR_Ciagly, 2);
             break;

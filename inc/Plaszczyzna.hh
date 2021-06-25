@@ -19,7 +19,14 @@ class Plaszczyzna {
     int ilosc;
 
     public:
+/*!
+ * \brief Konstruktor parametryczny klasy Plaszczyzna
+ */
     Plaszczyzna(double dlugosc, double szerokosc, double wysokosc, std::string sNazwaPliku);
+    
+/*!
+ * \brief Metoda odpowiada za zapis wspolrzednych do pliku
+ */
     bool Zapisz_do_pliku();
 };
 

@@ -21,10 +21,24 @@
 class Gora_ostra: public BrylaGeometryczna {
     
   public:
+/*!
+ * \brief Konstruktor bezparametryczny klasy Gora_ostra
+ */
     Gora_ostra();
+    
+/*!
+ * \brief Konstruktor bezparametryczny klasy Gora_ostra
+ */
     Gora_ostra( Wektor3D srodek, double dlugosc, double szerokosc, double wysokosc, std::string sNazwaPliku);                                                                                                                                                                                                                                                                      
 
+/*!
+ * \brief Metoda odpowiada za zapis wspolrzednych do pliku
+ */
     bool Zapis_do_pliku();
+    
+/*!
+ * \brief Destruktor, usuwa wymiary drona
+ */
     ~Gora_ostra();
 };
   

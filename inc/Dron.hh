@@ -22,20 +22,48 @@ class Dron {
 
     public:
     /*!
-    * \brief Konstruktory klasy Dron
+    * \brief Konstruktor bezparametryczny klasy Dron
     */
     Dron();
+    
+    /*!
+    * \brief Konstruktor parametryczny klasy Dron
+    */
     Dron(int id, PzG::LaczeDoGNUPlota &Lacze, Wektor3D polozenie);
 
     /*!
-    * \brief Metody klasy Dron
+    * \brief Metoda odpowiada za lot w gore
     */
     void Lot_w_gore(double droga);
+    
+    /*!
+    * \brief Metoda odpowiada za lot w dol
+    */
     void Lot_w_dol(double droga);
+    
+    /*!
+    * \brief Metoda odpowiada za obrot Drona
+    */
     void Obrot(double kat);
+    
+    /*!
+    * \brief Metoda odpowiada za przesuniecie Drona
+    */
     void Przesuniecie(double przesun);
+    
+    /*!
+    * \brief Metoda odpowiada za ruch Drona
+    */
     void Steruj_dronem();
+    
+    /*!
+    * \brief Metoda odpowiada za rysowanie trasy Drona
+    */
     void Trasa(double kat, double droga);
+    
+    /*!
+    * \brief Metoda odpowiada za zapis wspolrzednych Drona do pliku
+    */
     void Zapisz_do_pliku(); 
 };
 

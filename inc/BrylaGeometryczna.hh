@@ -25,18 +25,50 @@ class BrylaGeometryczna{
     std::string sNazwaPliku;
 
     public:
-    Wektor3D & operator[] (unsigned int index);         //przeciazenie operatora indeksowania, sluzy do odczytu i zapisu wierzcholkow
+/*!
+ * \brief Przeciazenie operatora indeksowania, sluzy do odczytu i zapisu wierzcholkow
+ */
+    Wektor3D & operator[] (unsigned int index);
+    
+/*!
+ * \brief Przeciazenie operatora indeksowania, sluzy do odczytu i zapisu wierzcholkow
+ */    
     const Wektor3D & operator[] (unsigned int index) const;
     
-    
+/*!
+ * \brief Metoda zwraca srodek bryly
+ */    
     Wektor3D zwroc_srodek() const;
+    
+/*!
+ * \brief Metoda zwraca nazwe pliku
+ */    
     std::string ZwrocNazwaPliku() const;
+    
+/*!
+ * \brief Metoda odpowiada za dodanie wektora przesuniecia
+ */
     BrylaGeometryczna operator + (Wektor3D przesun);
+    
+/*!
+ * \brief Metoda obraca bryle
+ */
     void Obrot(Macierz3x3 macierz);
+    
+/*!
+ * \brief Metoda przesuwa bryle o zadany wektor
+ */    
     void Przesuniecie(Wektor3D przesun);
+    
+/*!
+ * \brief Metoda zapisuje wspolrzedne wierzcholkow do pliku
+ */
     bool Zapisz_do_pliku();
+    
+/*!
+ * \brief Destruktor klasy BrylaGeometryczna
+ */    
     ~BrylaGeometryczna();
-
 };
 
 

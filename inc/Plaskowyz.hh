@@ -22,10 +22,24 @@
 class Plaskowyz: public BrylaGeometryczna {
     
   public:
+/*!
+ * \brief Konstruktor bezparametryczny klasy Plaskowyz
+ */
     Plaskowyz();
+    
+/*!
+ * \brief Konstruktor parametryczny klasy Prostopadloscian
+ */    
     Plaskowyz( Wektor3D srodek, double dlugosc, double szerokosc, double wysokosc, std::string sNazwaPliku);                                                                                                                                                                                                                                                                      
 
+/*!
+ * \brief Metoda odpowiada za zapis wspolrzednych do pliku
+ */
     bool Zapis_do_pliku();
+    
+/*!
+ * \brief Destruktor, usuwa wymiary drona
+ */
     ~Plaskowyz();
 };
   

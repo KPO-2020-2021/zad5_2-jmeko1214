@@ -21,10 +21,24 @@
 class Prostopadloscian: public BrylaGeometryczna {
     
   public:
+/*!
+ * \brief Konstruktor bezparametryczny klasy Prostopadloscian
+ */
     Prostopadloscian();
+    
+/*!
+ * \brief Konstruktor parametryczny klasy Prostopadloscian
+ */
     Prostopadloscian( Wektor3D srodek, double dlugosc, double szerokosc, double wysokosc, std::string sNazwaPliku);                                                                                                                                                                                                                                                                      
 
+/*!
+ * \brief Metoda odpowiada za zapis wspolrzednych do pliku
+ */
     bool Zapis_do_pliku();
+    
+/*!
+ * \brief Destruktor, usuwa wymiary drona
+ */
     ~Prostopadloscian();
 };
   

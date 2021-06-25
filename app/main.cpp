@@ -39,7 +39,6 @@ void Menu_wyswietl()
   cout<<"  a - wybierz aktywnego drona"<<endl;
   cout<<"  p - zadaj parametry przelotu"<<endl;
   cout<<"  d - dodaj element powierzchni"<<endl;
-  cout<<"  u - usun element powierzchni"<<endl;
   cout<<"  m - wyswietl menu"<<endl<<endl;
   cout<<"  k - koniec dzialania programu"<<endl;
   cout<<endl;
@@ -100,11 +99,6 @@ int main() {
       case 'd':
       {
         scena.Dodaj_przeszkode();
-        break;
-      }
-      case 'u':
-      {
-        //scena.Usun_przeszkode();
         break;
       }
       case 'm':
